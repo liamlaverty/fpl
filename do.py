@@ -50,6 +50,11 @@ plt.subplot2grid((2,3), (1,1))
 plt.scatter(df.FTAG, df.Referee, alpha=0.1)
 plt.title("Referee full time away goals")
 
-# align the graphs so that they're not on top of eachother and then show them
+# graph of full time home goals vs who won
+#plt.subplot2grid((2,3), (1, 2), colspan=2)
+# for x in ['H', 'A', 'D']:
+    # df.FTHG[df.FTR == x].plot(kind="kde")
+# plt.title("Full Time goals vs winner")
+# plt.legend("Home", "Away", "Draw")
 
 plt.show()
